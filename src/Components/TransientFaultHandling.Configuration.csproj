@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Rolosoft</Authors>
+    <Company>Rolosoft</Company>
+    <Copyright>Copyright © Rolosoft Ltd 2017</Copyright>
+    <RepositoryUrl>https://github.com/Rolosoft/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard</RepositoryUrl>
+    <PackageIconUrl>https://rolosoft.blob.core.windows.net/common/rolosoft128x128.png</PackageIconUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>entlib entlib6 enterprise library elazure retry retries transient fault exception handling failure network topaz async</PackageTags>
+    <PackageReleaseNotes>Initial commit</PackageReleaseNotes>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <FileVersion>7.0.0.0</FileVersion>
+    <Description>Enterprise Library Transient Fault Handling Application Block</Description>
+    <Product>Enterprise Library Transient Fault Handling Application Block</Product>
+    <Version>7.0.0</Version>
+    <PackageId>Rolosoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard</PackageId>
+    <PackageProjectUrl>https://github.com/Rolosoft/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard</PackageProjectUrl>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling</RootNamespace>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Rolosoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard.snk</AssemblyOriginatorKeyFile>
+   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net461|AnyCPU'">
+    <DocumentationFile>bin\Debug\net461\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net461|AnyCPU'">
+    <DocumentationFile>bin\Release\net461\Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rolosoft.EnterpriseLibrary.TransientFaultHandling.Standard" Version="7.0.0" />
+    <PackageReference Include="Rolosoft.Practices.EnterpriseLibrary.Common.Standard" Version="7.0.0-preview1-00002" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Configuration\DesignResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DesignResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Configuration\DesignResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesignResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+
+
+</Project>
