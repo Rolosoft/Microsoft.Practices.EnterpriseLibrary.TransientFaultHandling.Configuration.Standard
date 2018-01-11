@@ -1,7 +1,7 @@
 # Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard
 **Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration updated for 2018.**
 
-[![rolosoft_public_packages MyGet Build Status](https://www.myget.org/BuildSource/Badge/rolosoft_public_packages?identifier=cf23c689-52de-4b2c-905a-66c63bc53b63)](https://www.myget.org/)
+[![rolosoft_public_packages MyGet Build Status](https://www.myget.org/BuildSource/Badge/rolosoft_public_packages?identifier=e1a85a5d-a0f2-45b9-9392-418964b97ef9)](https://www.myget.org/)
 
 ## About
 Microsoft Patterns and Practices (p&p) Enterprise Library came to an unfortunate end (i.e. it was dropped by Microsoft).
@@ -10,7 +10,7 @@ Because my software company still heavily uses some of the p&p blocks, I've deci
 
 ## Installation
 ~~~
-install-package Rolosoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.Standard
+install-package Rsft.EntLib.TransientFaultHandling.Config.Standard
 ~~~
 
 ## Features
