@@ -10,7 +10,7 @@
     <PackageIconUrl>https://rolosoft.blob.core.windows.net/common/rolosoft128x128.png</PackageIconUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>entlib entlib6 enterprise library elazure retry retries transient fault exception handling failure network topaz async</PackageTags>
-    <PackageReleaseNotes>Initial commit</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated packages.</PackageReleaseNotes>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
     <FileVersion>7.0.0.0</FileVersion>
     <Description>Enterprise Library Transient Fault Handling Application Block</Description>
@@ -41,9 +41,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Rsft.EntLib.Common.Standard" Version="7.0.0" />
+    <PackageReference Include="Rsft.EntLib.Common.Standard" Version="7.0.1" />
     <PackageReference Include="Rsft.EntLib.TransientFaultHandling.Standard" Version="7.0.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
